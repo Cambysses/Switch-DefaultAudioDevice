@@ -3,5 +3,5 @@ This was created out of pure laziness. I switch between my speakers and headphon
 
 *Requires the "AudioDeviceCmdlets" module. https://www.powershellgallery.com/packages/AudioDeviceCmdlets/3.0.0.4*
 
-To run this on your own computer, replace the two audio device IDs at the beginning of the script. You can get these by running the following command:
+To run this on your own computer, replace the two device variables with your own device IDs. You can get these IDs by running the following command:
 `Get-AudioDevice -list`
