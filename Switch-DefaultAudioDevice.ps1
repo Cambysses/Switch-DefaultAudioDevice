@@ -8,7 +8,7 @@ function Switch-DefaultAudioDevice
         $NewDevice
     )
 
-    if ((Get-AudioDevice -ID $CurrentDevice | Select-Object -ExpandProperty "Default") -eq "True")
+    if (Get-AudioDevice -ID $CurrentDevice | Select-Object -ExpandProperty "Default")
     {
         Set-AudioDevice -ID $NewDevice
         return $true
